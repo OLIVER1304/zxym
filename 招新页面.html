@@ -1,0 +1,187 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宣策组招新</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\招新页面.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function my_func() {
+
+            var xm = document.getElementById("input1").value;
+            var reg = /^[\u4e00-\u9fa5]+$/g;
+            var reg0 = /^[\u4e00-\u9fa5]{3,}$/g;
+            var reg1 = /^[\u4e00-\u9fa5]{3,10}$/g;
+            if (xm == "" || xm == null) {
+                alert("请输入你的姓名");
+                return false
+            }
+            if (!reg.test(xm)) {
+                alert("请输入中文");
+                return false;
+            }
+            if (!reg0.test(xm)) {
+                alert("名字太短");
+                return false;
+            }
+            if (!reg1.test(xm)) {
+                alert("名字太长");
+                return false;
+            }
+            var xh = document.getElementById("input2").value;
+            var reg2 = /^(31*)\d{8}$/g;
+            if (!reg2.test(xh)) {
+                alert("请输入正确的学号");
+                return false;
+            }
+            var dh = document.getElementById("input7").value;
+            var reg3 = /^\d{11}$/g;
+            if (!reg3.test(dh)) {
+                alert("请输入正确的电话");
+                return false;
+            }
+
+            var yx = document.getElementById("input8").value;
+            var reg4 = /^\w+([._-]\w+)*@(\w+\.)+\w+$/g;
+            if (!reg4.test(yx)) {
+                alert("请输入有效的邮箱");
+                return false;
+            } else {
+                return true;
+            }
+        }
+        var maxstrlen = 160;
+
+        function Q(o) {
+            return document.getElementById(o);
+        }
+
+        function checkWord(w) {
+            len = maxstrlen;
+            var str = w.value;
+            myLen = getStrleng(str);
+            var wck = Q("wordCheck");
+            if (myLen > len * 2) {
+                w.value = str.substring(0, i + 1);
+            } else {
+                wck.innerHTML = Math.floor((len * 2 - myLen) / 2);
+            }
+        }
+
+        function getStrleng(str) {
+            var i = 0;
+            myLen = 0;
+            for (;
+                (i < str.length) && (myLen <= maxstrlen * 2); i++) {
+                if (str.charCodeAt(i) > 0 && str.charCodeAt(i) < 128) //字符编码，128以内的是数字，英文字符，已经英文的符号等
+                    myLen++;
+                else
+                    myLen += 2;
+            }
+            return myLen;
+        }
+
+
+
+        var maxstrlen = 160;
+
+        function Q(o) {
+            return document.getElementById(o);
+        }
+
+        function checkWords(w) {
+            len = maxstrlen;
+            var str = w.value;
+            myLen = getStrleng(str);
+            var wck = Q("wordChecks");
+            if (myLen > len * 2) {
+                w.value = str.substring(0, i + 1);
+            } else {
+                wck.innerHTML = Math.floor((len * 2 - myLen) / 2);
+            }
+        }
+
+        function getStrleng(str) {
+            var i = 0;
+            myLen = 0;
+            for (;
+                (i < str.length) && (myLen <= maxstrlen * 2); i++) {
+                if (str.charCodeAt(i) > 0 && str.charCodeAt(i) < 128) //字符编码，128以内的是数字，英文字符，已经英文的符号等
+                    myLen++;
+                else
+                    myLen += 2;
+            }
+            return myLen;
+        }
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <form class="f1" name="form" action="" method="POST">
+                    <div class="a">&nbsp;&nbsp;&nbsp;网管队技术组<br>&nbsp;&nbsp;&nbsp;招新报名
+                        <hr>
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-user fa-lg i2"></i>
+                        <input name="1" id="input1" class="i1" type="text" placeholder="姓名">
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-vcard-o fa-lg"></i>
+                        <input id="input2" class="i1" type="text" placeholder="学号">
+                    </div>
+                    <div class="wrapper seax">
+                        <i class="fa fa-mars-stroke fa-lg"></i>
+                        <text class="x1">性别</text>
+                        <text class="x2">男</text>
+                        <input class="s" type="radio" name="selet">
+                        <text class="x3">女</text>
+                        <input class="s" type="radio" name="selet">
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-hotel fa-lg"></i>
+                        <input id="input4" class="i1" type="text" placeholder="宿舍区">
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-bank fa-lg"></i>
+                        <input id="input5" class="i1" type="text" placeholder="学院名称">
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-book fa-lg"></i>
+                        <input id="input6" class="i1" type="text" placeholder="专业及班级&nbsp；例：工业设计2班">
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-tablet fa-lg i3"></i>
+                        <input id="input7" class="i1" type="text" placeholder="手机号码">
+                    </div>
+                    <div class="wrapper">
+                        <i class="fa fa-envelope fa-lg"></i>
+                        <input id="input8" class="i1" type="text" placeholder="电子邮箱">
+                    </div>
+                    <div class="t1">
+                        <div class="n">自我介绍</div>
+                        <textarea id="text1" class="b" rows="5" cols="20" onKeyUp="javascript:checkWord(this);" onMouseDown="javascript:checkWord(this);" name="content" style="overflow-y:scroll"></textarea>
+                        <div class="w">
+                            <span id="wordCheck">160</span>
+                        </div>
+                    </div>
+                    <div class="t2">
+                        <div class="p">为何报名本部门</div>
+                        <textarea id="text2" class="c" rows="5" cols="20" onKeyUp="javascript:checkWords(this);" onMouseDown="javascript:checkWords(this);" name="content" style="overflow-y:scroll"></textarea>
+                        <div class="w">
+                            <span id="wordChecks">160</span>
+                        </div>
+                    </div>
+                    <input class="l" onclick="return my_func()" type="submit" value="提交">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

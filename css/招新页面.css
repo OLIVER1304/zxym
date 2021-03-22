@@ -1,0 +1,199 @@
+body {
+    background-image: url(../img/蓝色背景.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .row:nth-child(1) {
+    background-color: transparent;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+}
+
+.a {
+    margin-top: 1em;
+    margin-left: -1.5em;
+    height: 100px;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: whitesmoke;
+}
+
+.b {
+    width: 31em;
+    height: 70px;
+    border-radius: 0.3em;
+    float: left;
+    margin-top: 1em;
+    outline: none;
+    resize: none;
+}
+
+.c {
+    width: 31em;
+    height: 70px;
+    float: left;
+    border-radius: 0.3em;
+    margin-top: 0em;
+    outline: none;
+    resize: none;
+}
+
+.n {
+    height: 10px;
+    width: 60px;
+    margin-top: 0.5em;
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    float: left;
+    background-color: transparent;
+}
+
+.p {
+    height: 20px;
+    width: 100px;
+    margin-top: 0em;
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    float: left;
+    background-color: transparent;
+}
+
+.l {
+    width: 31em;
+    height: 40px;
+    border-radius: 0.3em;
+    text-align: center;
+    outline: none;
+    border: 0ch;
+    margin-left: 7.8%;
+    margin-top: 1em;
+    background-color: rgb(46, 46, 206);
+    color: rgb(250, 250, 250);
+}
+
+input {
+    height: 2.5em;
+    width: 31em;
+    border-radius: 4em;
+    border: 0ch;
+    padding-left: 35px;
+    outline: none;
+    float: left;
+    color: black;
+    background-color: whitesmoke;
+}
+
+hr {
+    width: 429px;
+    margin-left: 3.5em;
+}
+
+.wrapper {
+    margin-top: 0.5em;
+    margin-left: 2.8em;
+    width: 31em;
+    height: 2.5em;
+    position: relative;
+}
+
+.seax {
+    background-color: whitesmoke;
+    border-radius: 4em;
+    height: 2.5em;
+    width: 31em;
+    padding-left: 35px;
+}
+
+i {
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+i.fa {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.i1 {
+    margin: 0em;
+}
+
+.i2 {
+    margin-left: 8px;
+}
+
+.i3 {
+    margin-left: 9px;
+    margin-top: 6px;
+}
+
+.f1 {
+    height: 133px;
+    width: 525px;
+    margin-top: 3%;
+    background-color: transparent;
+}
+
+.s {
+    margin-top: 9px!important;
+    margin-left: 2px!important;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+.x1 {
+    margin-top: 7.5px;
+    float: left;
+    color: rgb(122, 121, 121);
+    font-weight: 400;
+}
+
+.x2 {
+    margin-top: 7px;
+    margin-left: 25px;
+    float: left;
+}
+
+.x3 {
+    margin-top: 7px;
+    margin-left: 20px;
+    float: left;
+}
+
+.box {
+    width: 520px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.row {
+    border: 1px solid transparent;
+}
+
+.w {
+    float: right;
+    display: flex;
+    align-items: flex-end;
+}
+
+.t1 {
+    width: 31em;
+    margin-left: 2.9em;
+    padding: 0px;
+}
+
+.t2 {
+    width: 31em;
+    margin-left: 2.9em;
+    margin-top: 0px;
+    padding: 0px;
+}
